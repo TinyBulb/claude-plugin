@@ -10,6 +10,7 @@
   },
   "homepage": "https://tinybulb.com",
   "repository": "https://github.com/TinyBulb/claude-plugin",
+  "icon": "./assets/tinybulb-logo.png",
   "privacyPolicyUrl": "https://tinybulb.com/privacy",
   "license": "MIT",
   "keywords": ["games", "publishing", "html5"]
