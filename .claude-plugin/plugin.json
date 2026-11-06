@@ -1,0 +1,15 @@
+{
+  "name": "tinybulb",
+  "displayName": "TinyBulb",
+  "version": "1.0.0",
+  "description": "Make browser games feel finished and play well on phones, then publish them on TinyBulb, where anyone can play them from a link.",
+  "author": {
+    "name": "TinyBulb",
+    "email": "support@tinybulb.com",
+    "url": "https://tinybulb.com"
+  },
+  "homepage": "https://tinybulb.com",
+  "repository": "https://github.com/TinyBulb/claude-plugin",
+  "license": "MIT",
+  "keywords": ["games", "publishing", "html5"]
+}
