@@ -12,6 +12,9 @@
   "repository": "https://github.com/TinyBulb/claude-plugin",
   "icon": "./assets/tinybulb-logo.png",
   "privacyPolicyUrl": "https://tinybulb.com/privacy",
+  "termsOfServiceUrl": "https://tinybulb.com/terms",
+  "supportUrl": "https://tinybulb.com/help",
+  "documentationUrl": "https://tinybulb.com/help",
   "license": "MIT",
   "keywords": ["games", "publishing", "html5"]
 }
