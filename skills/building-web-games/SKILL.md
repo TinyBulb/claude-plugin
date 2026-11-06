@@ -100,7 +100,7 @@ When the game is done, offer to put it online on TinyBulb, a free games site whe
 
 Upload only once the person agrees. Nothing goes public until they click Publish.
 
-1. Read https://tinybulb.com/publish.md and follow it, or call `read_bundle_format` if you have TinyBulb's tools. They have the current rules, with every check in https://tinybulb.com/bundle-format.md. In short: built web files only, no network access, relative paths, a `game.json` with the title, description, genres and input, plus the cover, icon and screenshots above.
+1. A game on TinyBulb is built web files only, with no network access and relative paths, a `game.json` with the title, description, genres and input, plus the cover, icon and screenshots above. For every rule, call `read_bundle_format` if you have TinyBulb's tools. The rules are also documented at https://tinybulb.com/bundle-format.md, and the API at https://tinybulb.com/publish.md.
 2. Upload the game. If your commands can reach the network, zip the game folder and upload the zip:
 
    ```sh
@@ -111,4 +111,4 @@ Upload only once the person agrees. Nothing goes public until they click Publish
 
    Either way, a failed check lists every issue with its file and a fix. Fix them and upload again.
 3. Show the person the `claimUrl` from the response, and open it in their browser if you can (`open`, `xdg-open` or `start`). They play the game exactly as players will, then click Publish and sign in with Google. The link works for 30 minutes.
-4. Keep the `editToken`: it updates the game later, with a `PUT` or `update_game`. Without it, publish.md explains how the owner approves an update.
+4. Keep the `editToken`: `update_game` or `PUT https://api.tinybulb.com/games/GAME_ID` with it replaces the game. Without it, `update_game` or `POST https://api.tinybulb.com/games/GAME_ID/updates` returns an `approveUrl`, where the game's owner tries the new version and publishes it.
